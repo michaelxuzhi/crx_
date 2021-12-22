@@ -1,0 +1,42 @@
+{
+  "at": {
+    "parentName": "at",
+    "detail": {
+      "get_time": {
+        "name": "get_time",
+        "desc": "获取当前时间",
+        "params": "参数1 当前时间 参数2 时间格式",
+        "example": "at.get_time()"
+      },
+      "set_time": {
+        "name": "set_time",
+        "desc": "设置当前时间",
+        "params": "参数1 当前时间 参数2 时间格式",
+        "example": "at.set_time()"
+      }
+    }
+  },
+  "guild": {
+    "parentName": "guild",
+    "detail": {
+      "create": {
+        "name": "create",
+        "desc": "创建同盟",
+        "params": "参数1 同盟名称",
+        "example": "at.guild.create()"
+      },
+      "get_list": {
+        "name": "get_list",
+        "desc": "获取同盟列表",
+        "params": "参数1 当前页数 参数2 每页数量",
+        "example": "at.guild.get_list()"
+      },
+      "get_status": {
+        "name": "get_status",
+        "desc": "获取同盟状态",
+        "params": "参数1 同盟id",
+        "example": "at.guild.get_status()"
+      }
+    }
+  }
+}

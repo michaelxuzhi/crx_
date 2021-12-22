@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-blur">
+        <div class="header">
+          <div class="hd-left">
+            <div class="icon-area">
+              <div class="icon-img"></div>
+            </div>
+            <div class="icon-text">
+              <span>W6 Ats</span>
+            </div>
+          </div>
+          <div class="hd-middle">
+            <div class="search">
+              <form class="search-form">
+                <input
+                  id="search_input"
+                  class="search-input"
+                  type="search"
+                  placeholder="Search..."
+                  name="keyWord"
+                />
+                <!-- <button id="search_btn" class="search-btn"></button> -->
+                <span id="search_btn" class="search-btn"></span>
+                <!-- <label id="search_label" class="data-list" for="ats"> -->
+                  <!-- <div class="list">1</div> -->
+                <!-- </label> -->
+              </form>
+            </div>
+            <div class="btns">
+              <button class="btn-1">
+                <div
+                  class="btn-img"
+                  style="background: url('./assets/time.png') no-repeat center center;background-size: 90% 90%;"
+                ></div>
+              </button>
+              <button class="btn-1">
+                <div
+                  class="btn-img"
+                  style="background: url('./assets/notice_1.png') no-repeat center center;background-size: 90% 90%;"
+                ></div>
+              </button>
+              <button class="btn-1">
+                <div
+                  class="btn-img"
+                  style="background: url('./assets/share.png') no-repeat center center;background-size: 90% 90%;"
+                ></div>
+              </button>
+            </div>
+            <!-- <div class="title-top">w6 指令查询平台</div>
+          <div class="title-bottom">SEARCH FOR ATs</div> -->
+          </div>
+          <div class="hd-right">
+            <div class="total-text">共收录： <span id="at_num">{未知}</span> 条指令</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-middle">
+            <ul id="at_list_ul">
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="ctx-m-body">
+            <div class="m-top">
+              <div class="m-top-title">
+                <span id="at_name">{示例指令名称}</span>
+              </div>
+              <div class="m-top-list">
+                <ul id="at_child_list_ul">
+                  <!-- 这里由js控制插入某类li指令列表 -->
+                </ul>
+              </div>
+            </div>
+            <div class="m-middle">
+              <div class="m-middle-title">
+                <span>指令详情：</span>
+                <span id="at_desc">{示例指令描述}</span>
+              </div>
+              <div class="m-middle-ctx">
+                <ul id="at_child_params_list_ul">
+                  <!-- <li>
+                    <div>
+                      <span>英雄prefebID：</span>
+                      <span><input type="text" maxlength="8"/></span>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="m-bottom">
+              <div class="m-bottom-title">
+                <span>指令用法:</span>
+              </div>
+              <div class="m-bottom-ctx">
+                <div class="m-bottom-ctx-at">
+                  <div id="at_copy_tool"></div>
+                  <div class="m-bottom-ctx-at-short">
+                    <div class="at-ctx">
+                      <span>短指令：</span>
+                      <span id="at_short">at.{模块}{.指令名}</span>
+                      <span id="at_params_short" style="padding-left: 0px;"
+                        >(参数)</span
+                      >
+                    </div>
+                    <div class="btn-copy" id="btn_copy_short">copy</div>
+                    <div class="btn-reset" id="btn_reset">reset</div>
+                  </div>
+                  <div class="m-bottom-ctx-at-short">
+                    <div class="at-ctx">
+                      <span>通用短指令：</span>
+                      <span id="at_short_common">at.ff({模块}/{指令名},
+                        <span id="at_params_common" style="padding-left: 0px;"
+                        >参数</span
+                      >)</span>
+                    </div>
+                    <div class="btn-copy" id="btn_copy_short">copy</div>
+                    <div class="btn-reset" id="btn_reset">reset</div>
+                  </div>
+                  <div class="m-bottom-ctx-at-long">
+                    <div class="at-ctx">
+                      <span>长指令：</span>
+                      <span id="at_long">{prot_$}</span>
+                      <span id="at_params_long" style="padding-left: 0px;">(参数)</span>
+                    </div>
+                    <div class="btn-copy" id="btn_copy_long">copy</div>
+                    <div class="btn-reset">reset</div>
+                  </div>
+                  <div class="m-bottom-ctx-at-long-tip">
+                    <span style="display: block;"
+                      >已省略：prot_$.doSendToServer_$('game.at_admin','on_com_at',)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module" src="./scripts/index.js"></script> -->
+    <script type="text/javascript" src="./script/index_.js"></script>
+  </body>
+</html>
