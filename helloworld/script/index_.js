@@ -205,6 +205,8 @@ function copyShort(e) {
   let short_text_param = at_params_short.innerText;
   let flag = copyText(short_text + short_text_param);
   alert(flag ? '复制成功' + '\n' + `${short_text + short_text_param}` : '复制失败');
+  chrome.devtools.inspectedWindow.eval('window.getWindow()');
+  chrome.devtools.inspectedWindow.eval("console.log('hello')");
 }
 
 // 兼容版本-copyToClipboard
