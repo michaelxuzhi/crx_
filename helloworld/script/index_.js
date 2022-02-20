@@ -13,7 +13,7 @@ function $(ele_ID) {
     case '.':
       return document.getElementsByClassName(`${real_str}`);
     default:
-      return document.getElementsByTagName(`${ele_ID}`);
+      return document.getElementsByTagName(`${ele_ID}`)[0];
   }
 }
 
