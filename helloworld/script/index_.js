@@ -157,7 +157,7 @@ function addGlobalStyle() {
   let atSearchItemStyle = document.getElementsByTagName('style');
   if (atSearchItemStyle.length === 0) {
     atSearchItemStyle = document.createElement('style');
-    document.querySelector('head').appendChild(atSearchItemStyle);
+    $('head').appendChild(atSearchItemStyle);
   }
   return atSearchItemStyle;
 }
